@@ -17,6 +17,39 @@
 <body>
 	Heading is <span id="position-hng">n/a</span>
 	<div class="compass-arrow" id="compass"></div>
+	<div id="firebaseMetadata"></div>
+
+	<div>
+		<label>Create some dummy data with this name</label>
+		<input id="dummyDataId" type="text">
+		<button type="button" id="makeADummy">Make a Dummy</button>
+	</div>
+
+	<div class="kevinSullivansLeftArm">
+		<label>Who do you wanna start creeping on?</label>
+		<input type="text" id="lookupUserId">
+		<button type="button" id="kk">KK</button>
+	</div>
+
+	<div class="kevinSullivansRightArm">
+		<div id="theUsersPosition">
+
+		</div>
+	</div>
+
+	<script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js"></script>
+	<script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyCST_48iaq1RFR1-dXPxIvhVQsNGNA4vlc",
+            authDomain: "getthere-web.firebaseapp.com",
+            databaseURL: "https://getthere-web.firebaseio.com",
+            projectId: "getthere-web",
+            storageBucket: "getthere-web.appspot.com",
+            messagingSenderId: "724110706946"
+        };
+        firebase.initializeApp(config);
+	</script>
 
 	<script src="get-there.js"></script>
 </body>
